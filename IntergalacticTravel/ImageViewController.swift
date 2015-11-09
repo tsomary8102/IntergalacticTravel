@@ -10,26 +10,17 @@ import UIKit
 
 class ImageViewController: UIViewController {
 
+    var isBlueStar: Bool?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if isBlueStar!
+        {
+            self.view.backgroundColor = UIColor.blueColor()
+        }
+        else
+        {
+            self.view.backgroundColor = UIColor.redColor()
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
 }
